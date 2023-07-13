@@ -1,0 +1,48 @@
+---------------------
+|      ATM         |
+---------------------
+| - accounts: List<Account>
+| - currentAccount: Account
+---------------------
+| + createAccount(): void
+| + selectAccount(accountNumber: String): void
+| + getAccountBalance(): double
+| + deposit(amount: double): void
+| + withdraw(amount: double): void
+| + getTransactionHistory(): List<String>
+| + updateCustomerInfo(name: String, address: String, postalCode: String, city: String): void
+---------------------
+
+---------------------
+|     Account      |
+---------------------
+| - accountNumber: String
+| - customer: Customer
+| - balance: double
+| - transactionHistory: List<String>
+---------------------
+| + getAccountNumber(): String
+| + getCustomer(): Customer
+| + getBalance(): double
+| + getTransactionHistory(): List<String>
+| + deposit(amount: double): void
+| + withdraw(amount: double): boolean
+---------------------
+
+---------------------
+|     Customer     |
+---------------------
+| - name: String
+| - address: String
+| - postalCode: String
+| - city: String
+---------------------
+| + getName(): String
+| + getAddress(): String
+| + getPostalCode(): String
+| + getCity(): String
+| + setName(name: String): void
+| + setAddress(address: String): void
+| + setPostalCode(postalCode: String): void
+| + setCity(city: String): void
+---------------------
